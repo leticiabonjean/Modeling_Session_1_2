@@ -2,14 +2,14 @@ from point import Point
 import random
 
 class PointException(Exception):
-    pass
+    pass #i think it won't run the code???? not sure
 
 class ColorPoint(Point):
     def __init__(self, x, y, color):
         if not isinstance(x, (int, float)):
-            raise TypeError("x must be a number") # checking that x is a number
-        if not isinstance(y, (int, float)):
-            raise TypeError("y must be a number") # since for dist we find square of x, y, they need to be numbers
+            raise PointException("x must be a number") # checking that x is a number
+        if not isinstance(y, (int, float)): # these are RESTRICTIONS
+            raise PointException("y must be a number") # since for dist we find square of x, y, they need to be numbers
 
         super().__init__(x, y)
         self.color = color
