@@ -58,7 +58,7 @@ for i in range (5):
 print("I get these 5 random points:")
 for p in points:
     print(p)
-
+#
 # end goal: sort our list of points. To do this, we have to be able to compare two points
     # maybe by distance
 print(points)

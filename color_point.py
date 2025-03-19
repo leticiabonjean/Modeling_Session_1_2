@@ -1,6 +1,6 @@
 from point import Point
 import random
-
+#
 class PointException(Exception):
     pass #i think it won't run the code???? not sure
 

@@ -9,7 +9,7 @@ class AdvancedPoint(ColorPoint):
         self._x = x
         self._y = y
         self._color = color
-
+#
     @property #shortcut to make life easier; it's like a type of method
     def x(self):
         return self._x #getter method
