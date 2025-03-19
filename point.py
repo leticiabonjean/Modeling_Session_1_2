@@ -74,17 +74,3 @@ print("the sorted list of points is:")
 points.sort()
 print(points)
 
-class ColorPoint(Point):
-
-
-
-colors = ["red", "green", "blue", "yellow", "black", "magenta",
-          "cyan", "white", "burgundy", "periwinkle", "marsala"]
-
-color_points = []
-for i in range(10):
-    color_points.append(
-        ColorPoint(random.randint(-10, 10),
-                   random.randint(-10, 10),
-                   random.choice(colors))
-    )
