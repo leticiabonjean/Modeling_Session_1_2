@@ -15,8 +15,9 @@ class AdvancedPoint(ColorPoint):
         return self._x #getter method
 
     @x.setter
-    def x(self, value): #add the value tha you want to set it as
+    def x(self, value): #add the value tha you want to set it as, if you want to change it in the future
         self._x = value #setter method
+        #it's basically you establishing what you'd like an attribute to be based on some info that you will give
 
     @property
     def y(self):
