@@ -14,15 +14,24 @@ class Point: #name for  class, same rules for variables apply; capital letter to
 
     def __str__(self): # str needs to be indented & follow the init
         """
-        magic methos that is called when we try to print an instance
+        magic method that is called when we try to print an instance
         :return: <x, y>
         """
         return f"p{self.x, self.y}"
 
     def distance_orig(self):
+        """
+        method calculates the distance between the origin (0,0) and the two points of an instance of the class
+        :return: Distance from the origin as a float
+        """
         return (self.x**2 + self.y**2)**0.5
 
     def __gt__(self, other): #need to include this other; gt = greater than
+        """
+        method for the greater than operator (>). It compares the distance from the origin of two Point instances
+        :param other: another Point instance
+        :return: True if this point is farther from the origin than the other point, else False
+        """
         my_distance = self.distance_orig()
         other_distance = other.distance_orig()
         return my_distance > other_distance
