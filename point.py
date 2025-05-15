@@ -81,5 +81,4 @@ print(f"I am comparing p > p2: {p > p2}")
 
 print("the sorted list of points is:")
 points.sort()
-print(points)
 

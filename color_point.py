@@ -53,4 +53,3 @@ print(p) # gives you red: 1, 2
 #         ColorPoint(random.randint(-10, 10),
 #                    random.randint(-10, 10),
 #                    random.choice(colors))
-#     )

@@ -91,4 +91,3 @@ print(p2)
 
 print(AdvancedPoint.distance_2_points(p, p2)) # takes (1,2) and (3,2) ^^^
 print(p.distance_to_other(p2)) # here you're including the other point, "p", in the beginning
-    # gives you the same result as the static method way
